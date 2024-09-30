@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>MyWebsite</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="left-menu">
+                <a href="#home"><b><span class="big-letter">A</span>bout<span class="big-letter">M</span>e</b></a>
+            </div>
+
+            <div class="right-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+        </header>
+
+        <section id="home">
+            <div class="home-container">
+                <img src="images/briel-image.jpg" alt="Home image" class="home-image">
+                <div class="socials-icon">
+                    <a href="" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="https://linktr.ee/chrisbriel" target="_blank"><img src="images/linktree-icon.png" alt="LinkTree"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <div class="about-row">
+                <div class="about-item">
+                    <div class="about-text">
+                        <h3>MYCB</h3>
+                        <p>My name is Chrislie Briel Mohomye Yotchouen, born on the 29th of November, 2001, in Banka, Cameroon. 
+                            I am the proud sibling of two brothers and two sisters. My formative years were spent in Bafang, 
+                            where I cultivated a strong sense of community and family values.
+                        </p>
+                    </div>
+                    <img src="images/home.jpg" alt="MYCB" class="about-image">  
+                </div>
+
+                <div class="about-item">
+                    <img src="images/graduation.jpg" alt="Graduation" class="about-image">
+                    <div class="about-text">
+                        <h3>Graduation</h3>
+                        <p>Upon completing my General Certificate 
+                            of Education (GCE) Ordinary Level, I relocated to Yaounde, Cameroon, the capital of our beautiful country, 
+                            to further my academic pursuits. During this period, I attended German language classes at the esteemed Goethe-Institut, 
+                            which significantly enhanced my linguistic capabilities and cultural understanding. In March 2021, I embarked on a new chapter of my life by moving to Germany. 
+                            This transition has been instrumental in broadening my horizons and providing me with invaluable experiences.</p>
+                    </div>   
+                </div>
+
+                <div class="about-item">
+                    <div class="about-text">
+                        <h3>Hobbies</h3>
+                        <p>Traveling is a profound passion of mine, and I endeavor to explore different countries and immerse myself in various 
+                            cultures as often as possible. This love for travel not only satisfies my curiosity but also enriches my understanding 
+                            of the world and its myriad of cultures.</p>
+                            <p>In my leisure time, I indulge in my passion for cooking and baking, activities that allow me to express my creativity 
+                            and bring joy to those around me. Additionally, I cherish moments spent with friends, watching movies, and listening 
+                            to a diverse array of music genres.
+                        </p>
+                    </div>
+                    <img src="images/baking.jpg" alt="Travel" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>As a dedicated Computer Science student, I have been building a solid foundation in key programming languages, including:</p>
+            <ul>
+                <li style="color: black;">HTML und CSS</li>
+                <li style="color: green;">JavaScript</li>
+                <li style="color: black;">Java and C</li>
+            </ul><br>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong><a href="mailto:brielmohoms@yahoo.com">brielmohoms@yahoo.com</a></p>
+                <p><strong>Telephone:</strong><a href="tel:+4915738223958">+49 1573 8223 958</a></p>
+                <p><strong>Address:</strong>Waldhausweg 15, 66123 Saarbrücken, Germany</p>
+            </div>
+            <div class="contact-form">
+                <h2>Message me</h2>
+                <form action="contactForm.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea><br>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
