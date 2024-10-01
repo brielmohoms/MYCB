@@ -125,6 +125,7 @@ h2::after {
 
 .about-text{
     flex: 1;
+    text-align: justify;
 }
 
 .contact-container{
@@ -159,6 +160,12 @@ h2::after {
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #333;
 }
 
 .contact-info{
@@ -216,7 +223,7 @@ h2::after {
     height: 25px;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1500px){
     .about-content{
         flex-direction: column;
         text-align: center;
@@ -254,14 +261,13 @@ h2::after {
 
     .right-menu{
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         width: 100px;
         height: 100px
     }
 
     .left-menu{
-        flex-direction: row;
-        width: 100px;
-        height: 100px
+        width: 90px;
+        height: 90px
     }
 }
