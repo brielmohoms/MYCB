@@ -234,6 +234,11 @@ h2::after {
         font-size: large;
     }
 
+    .left-menu{
+        width: 100px;
+        height: 100px;
+    }
+
     .about-content{
         flex-direction: column;
         text-align: center;
