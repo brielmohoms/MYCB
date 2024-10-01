@@ -1,7 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1;
 }
 
 header{
@@ -125,6 +130,89 @@ h2::after {
     flex: 1;
     text-align: justify;
 }
+
+p{
+    text-align: justify;
+}
+
+
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-content{
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-image-container {
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: blur(10px);
+    transition: filter 0.3s;
+}
+
+.project-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 10px;
+    background: #ecece0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust to center */
+    color: #777;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure the title is above the image */
+    text-align: center; /* Center the text */
+}
+
+.project-content:hover .project-image {
+    filter: blur(0);
+}
+
+.project-content:hover h4{
+    opacity: 0;
+}
+
+.project-content:hover .project-details {
+    opacity: 1;
+}
+
+
+
+
+
 
 .contact-container{
     display: flex;
