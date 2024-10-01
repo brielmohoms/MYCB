@@ -88,27 +88,32 @@
         <section id="contact">
             <h2>Contact</h2>
             <div class="contact-info">
-                <p><strong>Email:</strong><a href="mailto:brielmohoms@yahoo.com">brielmohoms@yahoo.com</a></p>
-                <p><strong>Telephone:</strong><a href="tel:+4915738223958">+49 1573 8223 958</a></p>
-                <p><strong>Address:</strong>Waldhausweg 15, 66123 Saarbrücken, Germany</p>
+                <img src="images/contact.png" alt="Contact" class="contact-image">
             </div>
-            <div class="contact-form">
-                <h2>Message me</h2>
-                <form action="contactForm.php" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea><br>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="contact-container">
+                <div class="messageMe-image-container">
+                    <img src="images/messageMe.jpg" alt="MessageMe" class="messageMe-image">
+                </div>
+    
+                <div class="contact-form">
+                    <h2>Message me</h2>
+                    <form action="contactForm.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea><br>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </body>
