@@ -93,10 +93,10 @@ h2{
 h2::after {
     content: '';
     display: block;
-    width: 60px;               /* Creates a decorative line under the heading */
+    width: 60px;                 /* Creates a decorative line under the heading */
     height: 4px;
     background-color: #b42121; /* Accent color for underline */
-    margin: 10px auto 0;       /* Centers the underline */
+    margin: 10px auto 0;         /* Centers the underline */
   }
 
 .about-row{
@@ -213,8 +213,8 @@ h4{
     background-color: #f0f0f0;
     padding: 10px 15px;
     border-radius: 5px;
-    z-index: 1; /* Ensure the title is above the image */
-    text-align: center; /* Center the text */
+    z-index: 1;                      /* Ensure the title is above the image */
+    text-align: center;              /* Center the text */
 }
 
 .project-content:hover .project-image {
@@ -314,7 +314,7 @@ h4{
     border-radius: 8px;
 }
 
-.contact-info a{
+.contact-content a{
     text-decoration: none;
     color: #333;
 }
