@@ -143,6 +143,13 @@ p{
     flex-wrap: wrap;
 }
 
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
 .project-content{
     position: relative;
     width: calc(33.33% - 20px);
@@ -151,6 +158,20 @@ p{
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s;
+}
+
+.skills-content{
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .project-box:hover {
@@ -179,7 +200,7 @@ p{
     opacity: 0;
     transition: opacity 0.3s;
     padding: 10px;
-    background: #ecece0;
+    background: #f1f1f1;
     border-radius: 5px;
     z-index: 1;
 }
