@@ -372,19 +372,6 @@ h4{
     display: block;
 }
 
-.messageMe-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    max-width: 100%;
-    margin: 70px auto;
-    padding: 20px;
-    background-color: #f1f1f1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
 .messageMe-image{
     border-radius: 10%;
     width: 200px;
