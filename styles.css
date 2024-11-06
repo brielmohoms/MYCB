@@ -57,6 +57,7 @@ header{
     display: flex;
     list-style: none;
     margin-left: auto;
+    font-family: 'Times New Roman';
 }
 
 .menu li{
@@ -180,8 +181,9 @@ header{
 }
 
 .socials-icon img{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    background-color: #d5cccc;
 }
 
 section{
