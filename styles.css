@@ -149,6 +149,7 @@ header{
     padding: 100px 20px;
     margin-top: 50px;
     background: url(images/home-image.jpg);
+    background-size: contain;
     background-position: center;
 }
 
@@ -184,49 +185,48 @@ section{
 
 h2{
     text-align: center;
+    font-size: 2rem;
 }
 
 h2::after {
     content: '';
     display: block;
-    width: 60px;                 /* Creates a decorative line under the heading */
+    width: 60px;                  /* Creates a decorative line under the heading */
     height: 4px;
     background-color: #b42121; /* Accent color for underline */
-    margin: 10px auto 0;         /* Centers the underline */
+    margin: 7px auto 0;          /* Centers the underline */
   }
 
-.about-row{
+.about-container{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 20px;
-    max-width: 100%;
-    margin: 70px auto;
     padding: 20px;
-    background-color: #f1f1f1;
+}
+
+.about-content{
+    position: relative;
+    width: calc(33.33% - 10px);
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 20px;
+    background-color: #f0f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.about-item{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transition: transform 0.3s;
+.about-text p{
+    font-size: 1.2rem;
+    color: #444;
+    font-family:'Times New Roman', Times, serif;
 }
 
-.about-item.reverse{
-    flex-direction: row-reverse;
-}
-
-.about-image{
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-}
-
-.about-text{
-    flex: 1;
-    text-align: justify;
+.about-text h3{
+    font-size: 1.6rem;
+    color: #b42121;
 }
 
 p{
@@ -249,7 +249,7 @@ p{
     position: relative;
     width: calc(33.33% - 20px);
     margin: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s;
@@ -294,9 +294,9 @@ p{
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
-    padding: 10px;
+    padding: auto;
     background: #f1f1f1;
-    border-radius: 5px;
+    border-radius: 8px;
     z-index: 1;
 }
 
@@ -311,6 +311,10 @@ h4{
     border-radius: 5px;
     z-index: 1;                      /* Ensure the title is above the image */
     text-align: center;              /* Center the text */
+}
+
+.project-details p{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .project-content:hover .project-image {
