@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
+#home, #about, #projects, #contact{
+    margin: 10px;
+    padding: 10px;
+}
+
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,11 +19,11 @@ header{
     width: 100%;
     top: 0;
     color: #333;
-    background: #e2e2e2;
+    background: #c3bbbb;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: auto;
     z-index: 1500;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -315,6 +320,7 @@ h4{
 
 .project-details p{
     font-family: 'Times New Roman', Times, serif;
+    color: #b42121;
 }
 
 .project-content:hover .project-image {
